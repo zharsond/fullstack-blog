@@ -11,6 +11,7 @@ import Articles from './components/organisms/Articles.jsx'
 import Article from './components/organisms/Article.jsx'
 import Editor from './components/molecules/Editor.jsx'
 import Category from './components/organisms/Category.jsx'
+import Upload from './Upload.jsx'
 
 function CheckAuthStatus({ isLoggin }){
   const navigate = useNavigate();
@@ -54,7 +55,9 @@ function App() {
           <Route path='/editor/:id' element={<Editor />}/>
           <Route path='/kategori' element={<Category />}/>
           <Route path='/kategori/:id' element={<Category />}/>
+          
         </Route>
+        <Route path='/test-upload' element={<Upload/>}/>
       </Routes>
 
    </BrowserRouter>

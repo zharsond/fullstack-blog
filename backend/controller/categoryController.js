@@ -59,7 +59,7 @@ exports.editCategory = async (req, res) => {
 
     if(!c){
       return res.status(400).json({
-        message: "Categor tidak ditemukan"
+        message: "Category tidak ditemukan"
       })
     }
 
